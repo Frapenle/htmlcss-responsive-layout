@@ -15,6 +15,11 @@
     --violet-text-color: #837EC1;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .fl {
     display: flex;
 }
@@ -26,16 +31,48 @@ header {
     width: 100%;
     height: 80px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
     border: 2px solid black;
     height: 80%;
-    width: 50%;
+    width: 100px;
 }
 
 nav {
     border: 2px solid yellow;
     height: 80%;
-    width: 50%;
+    width: 100px;
+}
+
+/* main */
+
+/* ! intro */
+.intro {
+    /* background-color: green; */
+    align-items: center;
+    flex-direction: column;
+}
+.card {
+    width: 80%;
+    height: 400px;
+    background-color: var(--cyan-bg-color);
+    /* border: 3px solid green; */
+    margin: 10px 0;
+}
+
+
+
+/* media queries tablet 768 */
+@media screen and (min-width: 768px) {
+    header { background-color: red;}
+}
+
+
+
+
+/* media queries desktop 992 */
+@media screen and (min-width: 992px) {
+    header { background-color: green;}
 }
