@@ -6,6 +6,36 @@
     box-sizing: border-box;
 }
 
-body {
-    color: red;
+:root {
+    --header-bg-color: #0084FD;
+    --header-text-color: white;
+    --button-bg-color: #0084FD;
+    --cyan-bg-color: #B4DDFF;
+    --violet-bg-color: #9792E4;
+    --violet-text-color: #837EC1;
+}
+
+.fl {
+    display: flex;
+}
+
+/* header */
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    width: 100%;
+    height: 80px;
+    align-items: center;
+}
+
+.logo {
+    border: 2px solid black;
+    height: 80%;
+    width: 50%;
+}
+
+nav {
+    border: 2px solid yellow;
+    height: 80%;
+    width: 50%;
 }
