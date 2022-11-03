@@ -14,6 +14,26 @@
     --violet-bg-color: #9792E4;
     --violet-text-color: #837EC1;
 }
+
+h1 {
+    padding: 40px 0;
+    font-size: 2rem;
+}
+
+h2 {
+    padding: 20px 0 25px;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     margin: 0 30px;
 }
@@ -38,6 +58,7 @@
     color: white;
     display: inline-block;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 /* header */
@@ -78,12 +99,19 @@ header nav ul {
 /* ! intro */
 .intro {
     width: 100%;
+    color:#0084FD;
 }
 
 .intro-row {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.intro .font-awesome {
+    color: var(--header-bg-color);
+    font-size: 5rem;
+    padding-top: 25px;
 }
 
 .card {
@@ -99,13 +127,12 @@ header nav ul {
     text-align: left;
 }
 
-.card h2 {
-    color: #0084FD;
-    padding: 25px 0;
-}
-
 .card p {
     padding-bottom: 20px;
+}
+
+.intro-row .btn > i {
+    padding-right: .5rem;
 }
 
 .card img {
@@ -120,27 +147,41 @@ header nav ul {
 #planning {
     width: 100%;
     background-color: var(--violet-bg-color);
+    padding: 50px 0;
+    color: white;
 }
 
 #planning .container {
     flex-direction: column;
 }
 
-img {
+#planning img {
     width: 100%;
-    /* background-size: cover; */
+    margin-bottom: 60px;
+}
+
+.planning-left p {
+    padding: 30px 0;
 }
 
 .planning-right {
     background-color: white;
-    border-radius: 20px;
+    border-radius: 40px;
+    margin: 20px 0;
 }
 
 .card-white {
-    width: 80%;
-    padding: 10px;
+    width: 100%;
+    padding: 20px;
     margin: 0 auto;
+    color: black;
+    text-align: center;
 }
+
+.card-white p {
+    font-style: italic;
+}
+
 
 /* ! testimonials */
 .testimonials {
