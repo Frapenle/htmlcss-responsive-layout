@@ -31,6 +31,15 @@
     justify-content: center;
 }
 
+.btn {
+    margin: 10px 0;
+    padding: 10px 45px;
+    background-color: #0084FD;
+    color: white;
+    display: inline-block;
+    border-radius: 20px;
+}
+
 /* header */
 header {
     background-color: var(--header-bg-color);
@@ -39,20 +48,29 @@ header {
     height: 80px;
 }
 
-header .container {
+header .container{
+    align-items: center;
     justify-content: space-between;
 }
 
-.logo {
-    border: 2px solid black;
-    height: 80%;
-    width: 100px;
+header nav ul {
+    display: none;
 }
 
-nav {
-    border: 2px solid yellow;
-    height: 80%;
-    width: 100px;
+.logo {
+    width: 50%;
+}
+
+.logo > img {
+    width: 70px;
+    vertical-align: middle;
+}
+
+.hamburger {
+    width: 50px;
+    height: 80px;
+    flex-direction: row-reverse;
+    line-height: 80px;
 }
 
 /* main */
@@ -60,32 +78,51 @@ nav {
 /* ! intro */
 .intro {
     width: 100%;
-    border: 6px solid pink;
 }
 
 .intro-row {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 3px solid green;
 }
 
 .card {
     width: 100%;
-    height: 400px;
-    border: 3px solid green;
     background-color: var(--cyan-bg-color);
     margin: 10px 0;
+    padding: 0 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card.text-left {
+    text-align: left;
+}
+
+.card h2 {
+    color: #0084FD;
+    padding: 25px 0;
+}
+
+.card p {
+    padding-bottom: 20px;
+}
+
+.card img {
+    padding-top: 20px;
+    display: block;
+    width: 90%;
+    max-width: 250px;
 }
 
 /* main */
-/* ! jumbotron */
-.jumbotron {
+/* ! planning */
+#planning {
     width: 100%;
     background-color: var(--violet-bg-color);
 }
 
-.jumbotron .container {
+#planning .container {
     flex-direction: column;
 }
 
@@ -94,7 +131,7 @@ img {
     /* background-size: cover; */
 }
 
-.jumbotron-right {
+.planning-right {
     background-color: white;
     border-radius: 20px;
 }
@@ -246,21 +283,22 @@ img {
 
     header {
         background-color: #837EC1;
+        height: 80px;
     }
 
     /* jumbotron */
-    .jumbotron .container {
+    #planning .container {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .jumbotron-left,
-    .jumbotron-right {
+    .planning-left,
+    .planning-right {
         width: 50%;
         border: 3px solid white;
     }
 
-    .jumbotron-right {
+    .planning-right {
         height: 30%;
         align-self: flex-end;
     }
