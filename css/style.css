@@ -252,40 +252,67 @@ header nav ul {
 
 /* !benefit */
 .benefit {
-    background-color: violet;
+    background-color: var(--violet-bg-color);
     width: 100%;
-
+    padding: 30px 0;
 }
+.benefit h1 {
+    color: white;
+    text-align: center;
+}
+
 .benefit article {
     width: 100%;
-    height: 200px;
     border-radius: 10px;
     background-color: white;
+    color: grey;
     margin: 10px 0;
+    padding: 20px;
 }
+
+.benefit article .number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--violet-bg-color);
+}
+
+.benefit article h2 {
+    color: var(--violet-bg-color);
+}
+
+.benefit .btn {
+    background-color: var(--violet-bg-color);
+    color: white;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+
 
 /* about us */
 .about-us {
-    background-color: beige;
     width: 100%;
+    padding: 30px 0;
     align-items: center;
 }
 
-.about-us .container {
-    border: 2px solid black;
-    width: 90%;
-    margin: 10px 0;
+.about-us .text {
+    width: 100%;
 }
 
-.about-us .text {
-    width: 100%;background-color: grey;
-    height: 300px;
+.about-us h1 {
+    color: var(--violet-bg-color);
+    padding: 15px 0;
 }
+
+.about-us p {
+    padding: 10px;
+}
+
+.about-us
 
 .about-us .photo {
     width: 100%;
-    background-color: darkgrey;
-    height: 100px;
 }
 
 /* footer */
