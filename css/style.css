@@ -522,7 +522,7 @@ header nav ul {
     }
 
     header {
-        background-color: #837EC1;
+        background-color: var(--header-bg-color);
         height: 80px;
     }
 
@@ -544,7 +544,15 @@ header nav ul {
     }
 
     ul.menu li {
-        padding: 0 10px;
+        padding: 0 5px;
+    }
+
+    .btn-white {
+        padding: 8px 16px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        border-radius: 20px;
     }
 
     /* jumbotron */
